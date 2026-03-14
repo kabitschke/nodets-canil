@@ -157,8 +157,10 @@ export const Pet = {
     //Filtra pelo tipo
   },
 
-  getFromName: () => {
-    return data.filter(item => item.name.toLowerCase().indexOf(item.name.toLowerCase()) > -1);
-    //-1 é o retorno quando não encontrou
+  getFromName: (q: string) => {
+    return data.filter(item =>
+      item.name.toLowerCase().indexOf(q.toLowerCase()) > -1
+    );
+    //-1 é quando não encontrou nada
   }
 };
