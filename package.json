@@ -14,10 +14,12 @@
   "author": "",
   "type": "commonjs",
   "main": "index.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "nodemon -e ts,json,mustache src/server.ts"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "ts-node src/server.ts",
+  "start-dev": "nodemon -e ts,json,mustache src/server.ts"
+},
   "dependencies": {
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
